@@ -1,0 +1,3 @@
+telnet		23/tcp
+telnets		992/tcp				# Telnet over SSL
+tfido		60177/tcp			# fidonet EMSI over telnet
