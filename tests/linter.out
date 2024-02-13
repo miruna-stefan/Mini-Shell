@@ -1,0 +1,18 @@
+cd .. && checkpatch.pl -f src/*.c
+/bin/sh: 1: checkpatch.pl: not found
+make: [Makefile:22: lint] Error 127 (ignored)
+cd .. && cpplint --recursive src/
+Done processing src/cmd.c
+Done processing src/cmd.h
+Done processing src/main.c
+Done processing src/utils.c
+Done processing src/utils.h
+cd .. && shellcheck checker/*.sh
+/bin/sh: 1: shellcheck: not found
+make: [Makefile:24: lint] Error 127 (ignored)
+cd .. && shellcheck tests/*.sh
+/bin/sh: 1: shellcheck: not found
+make: [Makefile:25: lint] Error 127 (ignored)
+cd .. && shellcheck tests/_test/*.sh
+/bin/sh: 1: shellcheck: not found
+make: [Makefile:26: lint] Error 127 (ignored)
