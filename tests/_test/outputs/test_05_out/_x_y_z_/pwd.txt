@@ -1,0 +1,1 @@
+/home/miruna/Desktop/miniShell/assignment-mini-shell/tests/_test/outputs/test_05_out/_x_y_z_

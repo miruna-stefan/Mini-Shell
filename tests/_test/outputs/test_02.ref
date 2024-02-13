@@ -1,0 +1,5 @@
+printf "> "; whoami --help
+printf "> "; uname --help
+printf "> "; uname -a
+printf "> "; uname -s -m
+printf "> "; exit

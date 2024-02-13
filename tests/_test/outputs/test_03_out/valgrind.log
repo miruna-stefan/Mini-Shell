@@ -1,0 +1,32 @@
+==37584== Memcheck, a memory error detector
+==37584== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==37584== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==37584== Command: mini-shell
+==37584== Parent PID: 37583
+==37584== 
+==37584== 
+==37584== FILE DESCRIPTORS: 8 open (3 std) at exit.
+==37584== Open file descriptor 103: /snap/code/148/usr/share/code/v8_context_snapshot.bin
+==37584==    <inherited from parent>
+==37584== 
+==37584== Open file descriptor 38: /snap/code/148/usr/share/code/resources/app/node_modules.asar
+==37584==    <inherited from parent>
+==37584== 
+==37584== Open AF_UNIX socket 37: <unknown>
+==37584==    <inherited from parent>
+==37584== 
+==37584== Open file descriptor 36: /home/miruna/.config/Code/logs/20240102T193928/ptyhost.log
+==37584==    <inherited from parent>
+==37584== 
+==37584== Open file descriptor 3: /home/miruna/Desktop/miniShell/assignment-mini-shell/tests/_test/outputs/test_03_out/valgrind.log
+==37584==    <inherited from parent>
+==37584== 
+==37584== 
+==37584== HEAP SUMMARY:
+==37584==     in use at exit: 0 bytes in 0 blocks
+==37584==   total heap usage: 115 allocs, 115 frees, 15,874 bytes allocated
+==37584== 
+==37584== All heap blocks were freed -- no leaks are possible
+==37584== 
+==37584== For lists of detected and suppressed errors, rerun with: -s
+==37584== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

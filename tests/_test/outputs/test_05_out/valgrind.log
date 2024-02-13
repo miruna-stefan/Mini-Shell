@@ -1,0 +1,42 @@
+==37669== Memcheck, a memory error detector
+==37669== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==37669== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==37669== Command: mini-shell
+==37669== Parent PID: 37668
+==37669== 
+==37669== Syscall param chdir(path) points to unaddressable byte(s)
+==37669==    at 0x4987F8B: chdir (syscall-template.S:120)
+==37669==    by 0x109EE0: shell_cd (cmd.c:187)
+==37669==    by 0x109F20: complete_cd_command (cmd.c:197)
+==37669==    by 0x10A17C: parse_simple (cmd.c:285)
+==37669==    by 0x10A507: parse_command (cmd.c:467)
+==37669==    by 0x109801: start_shell (main.c:81)
+==37669==    by 0x109847: main (main.c:93)
+==37669==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==37669== 
+==37669== 
+==37669== FILE DESCRIPTORS: 8 open (3 std) at exit.
+==37669== Open file descriptor 103: /snap/code/148/usr/share/code/v8_context_snapshot.bin
+==37669==    <inherited from parent>
+==37669== 
+==37669== Open file descriptor 38: /snap/code/148/usr/share/code/resources/app/node_modules.asar
+==37669==    <inherited from parent>
+==37669== 
+==37669== Open AF_UNIX socket 37: <unknown>
+==37669==    <inherited from parent>
+==37669== 
+==37669== Open file descriptor 36: /home/miruna/.config/Code/logs/20240102T193928/ptyhost.log
+==37669==    <inherited from parent>
+==37669== 
+==37669== Open file descriptor 3: /home/miruna/Desktop/miniShell/assignment-mini-shell/tests/_test/outputs/test_05_out/valgrind.log
+==37669==    <inherited from parent>
+==37669== 
+==37669== 
+==37669== HEAP SUMMARY:
+==37669==     in use at exit: 0 bytes in 0 blocks
+==37669==   total heap usage: 145 allocs, 145 frees, 18,666 bytes allocated
+==37669== 
+==37669== All heap blocks were freed -- no leaks are possible
+==37669== 
+==37669== For lists of detected and suppressed errors, rerun with: -s
+==37669== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
